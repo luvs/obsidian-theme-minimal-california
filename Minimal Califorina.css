@@ -772,7 +772,6 @@ body, input, button,
 .markdown-preview-view h4,
 .HyperMD-header-4,
 .cm-s-obsidian .cm-header-4 {
-  font-variant:small-caps;
   letter-spacing:0.02em;
   color:var(--text-normal);
   font-weight:500;
@@ -781,7 +780,6 @@ body, input, button,
 .markdown-preview-view h5,
 .HyperMD-header-5,
 .cm-s-obsidian .cm-header-5 {
-  font-variant:small-caps;
   letter-spacing:0.02em;
   color:var(--text-normal);
   font-weight:500;
@@ -790,7 +788,6 @@ body, input, button,
 .markdown-preview-view h6,
 .HyperMD-header-6,
 .cm-s-obsidian .cm-header-6 {
-  font-variant:small-caps;
   letter-spacing:0.02em;
   color:var(--text-muted);
   font-weight:400;
