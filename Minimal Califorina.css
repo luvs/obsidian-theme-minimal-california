@@ -1750,7 +1750,8 @@ input[type=checkbox] {
   -webkit-appearance:none;
   appearance:none;
   /* border-radius:50%; */
-  border:1px solid var(--background-modifier-border-hover);
+  /* border:1px solid var(--background-modifier-border-hover); */
+  border:1px solid #D87001;
   padding:0;
 }
 input[type=checkbox]:focus,input[type=checkbox]:hover {
@@ -1764,7 +1765,7 @@ input[type=checkbox]:checked {
   background-position:center;
   background-size:70%;
   background-repeat:no-repeat;
-  background-image:url('data:image/svg+xml; utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-4.000000, -6.000000)" fill="%23ffffff"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+  background-image:url('data:image/svg+xml; utf8, <svg width="10px" height="8" viewBox="0 0 13 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-4.000000, -6.000000)" fill="%23ffffff"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
 }
 .markdown-preview-section > .contains-task-list {
   padding-bottom:0.5em;
@@ -1782,6 +1783,7 @@ input[type=checkbox]:checked {
   margin-left:-1.5em;
   margin-right:6px;
   filter:none;
+  border-radius: 50%;
 }
 .markdown-preview-view ul > li.task-list-item {
   text-indent:0;
@@ -1907,6 +1909,7 @@ input[type=checkbox]:checked {
   position: relative;
   padding-right: 4px;
   margin: 0;
+  vertical-align: text-top;
 }
 .nav-file-title.is-being-dragged,
 .nav-file-title.is-active,
@@ -2086,9 +2089,11 @@ h5:hover .heading-collapse-indicator.collapse-indicator svg,
   position:absolute;
   margin-left:-42px;
   padding-bottom:10px;
-  padding-top:8px;}
+  padding-top:10px;
+}
 .markdown-preview-view ul > li:not(.task-list-item) .collapse-indicator {
-  padding-right:20px;}
+  padding-right:20px;
+}
 .markdown-preview-view ul > li:not(.task-list-item)::before {
   content:'\2022';
   text-align:left;
@@ -2098,7 +2103,7 @@ h5:hover .heading-collapse-indicator.collapse-indicator svg,
   background:transparent;
   float:left;
   margin-right:12px;
-  margin-top:10px;
+  margin-top:12px;
   margin-left:-16px;
   display:inline-block;
   line-height:0;
@@ -2106,7 +2111,8 @@ h5:hover .heading-collapse-indicator.collapse-indicator svg,
   width:4px;
   border:0px;
   vertical-align:middle;
-  color:var(--text-faint);
+/*  color:var(--text-faint); */
+  color: #D87001;
   transform:translateX(-2px);
 }
 .markdown-preview-view ul > li:not(.task-list-item).is-collapsed::before {
@@ -3095,4 +3101,9 @@ input[type=range]::-webkit-slider-thumb:active {
 .search-result-file-title .tree-item-inner:before,
 .nav-file-icon:before {
   content: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" style="fill:rgb(0, 0, 0);"><path d="M19.903,8.586c-0.049-0.106-0.11-0.207-0.196-0.293l-6-6c-0.086-0.086-0.187-0.147-0.293-0.196 c-0.03-0.014-0.062-0.022-0.094-0.033c-0.084-0.028-0.17-0.046-0.259-0.051C13.04,2.011,13.021,2,13,2H6C4.897,2,4,2.897,4,4v16 c0,1.103,0.897,2,2,2h12c1.103,0,2-0.897,2-2V9c0-0.021-0.011-0.04-0.013-0.062c-0.005-0.089-0.022-0.175-0.051-0.259 C19.926,8.647,19.917,8.616,19.903,8.586z M16.586,8H14V5.414L16.586,8z M6,20V4h6v5c0,0.553,0.447,1,1,1h5l0.002,10H6z"></path><path d="M8 12H16V14H8zM8 16H16V18H8zM8 8H10V10H8z"></path></svg>');
+}
+
+/* daily planner plugin */
+.day-planner > .day-planner-progress-bar {
+    margin-top: 3px;
 }
